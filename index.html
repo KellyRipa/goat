@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Goat Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve goat awareness!</p>
+    <form id="survey-form" class="container">
+      <div class="form">
+      <label for="name" id="name-label">Name <input id="name" class="field" name="name" type="text" required placeholder="Enter your name"/></label>
+      </div>
+      <div class="form">
+      <label for="email" id="email-label">Email <input id="email" class="field" name="email" type="email" required placeholder="Enter your email"/></label>
+      </div>
+      <div class="form">
+        <label for="number" id="number-label">Age (optional) <input id="number" type="number" name="age" class="field" min="13" max="120" placeholder="Age"/></label>
+        </div>
+        <div class="form">
+        <p class="header">Do you like goats?</p>
+          <select id="dropdown" name="dropdown" class="field">
+            <option value="">(select one)</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+            <option value="3">Undecided</option>
+            <option value="4">*Loud goat noises*</option>
+          </select>
+        </div>
+        <div class="form">
+        <p class="header">How many goats have you encountered?</p>
+        <label for="quantity-one"><input id="quantity-one" type="radio" name="goat-encounter" class="radio" value="1" /> Less than 3</label>
+        <label for="quantity-two"><input id="quantity-two" type="radio" name="goat-encounter" class="radio" value="2" /> 4-9</label>
+        <label for="quantity-three"><input id="quantity-three" type="radio" name="goat-encounter" class="radio" value="3" /> More than 10</label>
+        </div>
+        <div class="form">
+          <p class="header">How would you like to see goats represented in society?
+          <span class="check">(Check all that apply)</span></p>
+          <label>
+          <input value="1" type="checkbox" name="society" class="checkbox" /> More goats at schools</label>
+          <label>
+          <input value="2" type="checkbox" name="society" class="checkbox" /> More goats at parks</label>
+          <label>
+          <input value="3" type="checkbox" name="society" class="checkbox" /> Street goats for morale</label>
+          <label>
+          <input value="4" type="checkbox" name="society" class="checkbox"/> Personal house companion goats</label>
+           <label>
+          <input value="5" type="checkbox" name="society" class="checkbox"/> Mall security goats</label>
+           <label>
+          <input value="6" type="checkbox" name="society" class="checkbox"/> Government subsidized financial advisory goats</label>
+          </div>
+          <div class="form">
+          <p class="header">Any other comments or suggestions?</p>
+          <textarea class="field" id="comments" rows="10" cols="60" placeholder="Enter your comments here..."></textarea>
+          </div>
+          <div class="form">
+            <button id="submit" class="submit-button" type="submit" />Submit</button>
+            </div>
+      </form>
+    </body>
+</html>
